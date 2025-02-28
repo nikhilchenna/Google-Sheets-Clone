@@ -1,0 +1,103 @@
+.spreadsheet-container {
+  width: 100%;
+  overflow: auto;
+  display: flex;
+  justify-content: flex-start; /* Ensure alignment starts from the first column */
+}
+
+.spreadsheet {
+  display: block;
+  border-collapse: collapse;
+  position: relative;
+  border: 2px solid #ccc;
+  min-width: fit-content; /* Ensures all columns including A are visible */
+}
+
+/* Header Row - Fixed Column Titles (A-Z) */
+.header-row {
+  display: flex;
+  position: sticky;
+  top: 0;
+  background-color: #f8f8f8;
+  z-index: 10;
+  width: fit-content;
+}
+
+/* Column Header Cells */
+.column-header {
+  width: 80px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  border: 1px solid #aaa;
+  background-color: #e0e0e0;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-sizing: border-box;
+}
+
+/* ✅ Ensure Column A is Visible & Fixed */
+.column-header:first-child {
+  left: 80px; /* Push it to the right to align properly */
+  z-index: 12;
+  background-color: #e0e0e0;
+  border-right: 2px solid #aaa;
+}
+
+/* Row Numbering (01, 02, ...) */
+.spreadsheet-row {
+  display: flex;
+  width: fit-content;
+}
+
+/* Row Header Cells */
+.row-header {
+  width: 80px;
+  height: 30px;
+  background-color: #e0e0e0;
+  border: 1px solid #aaa;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  left: 0;
+  z-index: 15;
+}
+
+/* ✅ Fixed Top Left Corner */
+.corner-cell {
+  width: 80px;
+  height: 30px;
+  background-color: #bbb;
+  border: 1px solid #aaa;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 20;
+}
+
+/* Spreadsheet Input Cells */
+.cell {
+  width: 80px;
+  height: 30px;
+  font-size: 14px;
+  text-align: center;
+  border: 1px solid #ccc;
+  outline: none;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+/* ✅ Make First Column Sticky */
+.cell:first-child {
+  position: sticky;
+  left: 80px;
+  background-color: #fff;
+  z-index: 10;
+  border-right: 2px solid #aaa;
+}
