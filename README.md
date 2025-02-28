@@ -1,70 +1,60 @@
-# Getting Started with Create React App
+Google Sheets Clone
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A web-based spreadsheet application that mimics Google Sheets, featuring mathematical functions, data entry/validation, and spreadsheet management.
 
-## Available Scripts
+Features
 
-In the project directory, you can run:
+Spreadsheet Interface: Interactive table for entering and manipulating data.
 
-### `npm start`
+Mathematical Functions: Basic arithmetic and formula support.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Data Quality Functions: Validation checks to maintain data integrity.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Data Entry & Validation: Input constraints and error handling.
 
-### `npm test`
+Bonus Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Advanced Formulas: Support for complex calculations.
 
-### `npm run build`
+Saving & Loading: Persistent storage of spreadsheets.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Data Visualization: Charts and graphs for data representation.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Tech Stack
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Frontend: React.js, Material UI
 
-### `npm run eject`
+Installation & Setup
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Prerequisites
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Ensure you have the following installed:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Node.js & npm
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Steps
 
-## Learn More
+Clone the repository
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+git clone https://github.com/your-username/google-sheets-clone.git
+cd google-sheets-clone
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Install frontend dependencies
 
-### Code Splitting
+cd frontend
+npm install
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Run the frontend
 
-### Analyzing the Bundle Size
+npm start
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Access the application
+Open http://localhost:3000 in your browser.
 
-### Making a Progressive Web App
+Usage
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Open the web app and create a new spreadsheet.
 
-### Advanced Configuration
+Enter data, apply formulas, and use validation features.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Save your spreadsheet for later use.
